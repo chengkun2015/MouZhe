@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50bbff">
+
+    <EditText
+        android:id="@+id/et_login_phone"
+        android:layout_width="292dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="163dp"
+        android:background="@drawable/bg_input"
+        android:hint="请输入手机号"
+        android:inputType="phone"
+        android:paddingLeft="12dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="292dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="212dp"
+        android:background="@drawable/bg_input"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="292dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/button_input"
+        android:text="登  录"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tv_login_forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="301dp"
+        android:text="忘记密码?"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_login_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_login_forgetpassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"
+        android:text="注册一个?"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_otherstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="185dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="94dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:text="其他登录方式"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="94dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ll_otherstyle"
+        android:layout_marginLeft="33dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_qq"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/qqicon" />
+
+        <ImageView
+            android:id="@+id/iv_weichat"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="42dp"
+            android:src="@drawable/weichaticon" />
+
+
+        <ImageView
+            android:id="@+id/iv_weibo"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="42dp"
+            android:src="@drawable/weiboicon" />
+
+        <ImageView
+            android:id="@+id/iv_lingying"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="42dp"
+            android:src="@drawable/lingyingicon" />
+
+    </LinearLayout>
+
+</RelativeLayout>
